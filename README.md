@@ -6,8 +6,11 @@ If you leave the Colab notebook to run for too long without attention, Colab mig
 
 - Press F12 in the browser to open JavaScript console
 - Paste the following code to console
-```
-function ClickConnect(){console.log("Working");document.querySelector("colab-toolbar-button#connect").click()}
+```javascript
+function ClickConnect(){
+    console.log("Working");
+    document.querySelector("colab-toolbar-button#connect").click()
+}
 setInterval(ClickConnect,60000)
 ```
 This will keep Colab active until your session is ended.
