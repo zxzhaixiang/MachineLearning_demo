@@ -30,6 +30,7 @@ In the notebook, several acquisition functions are provided, including simple me
 
 ### [DQN_Reinforcement_Learning_on_GYM_Atari.ipynb](https://github.com/zxzhaixiang/MachineLearning_demo/DQN_Reinforcement_Learning_on_GYM_Atari.ipynb)
 Probably the most fun notebook! Use deep Q network learning to learn how to place Atari game by only observing the game's output screen! The example used here is Breakout, and OpenAI's GYM Atari environment is used. The Q function is formulated as a small convolutional neural network which takes the screen output of the Atari game as input (usually a stack of a few consecutive frames) and then outputs the expected total reward for each action. In case of breakout, the action includes NOOP, FIRE (to start a game), LEFT and RIGHT. On Colab, with a few hour training, after seen something like 10,000 episodes of the game, the algorithm is able to learn the strategy automatically and achieves a high score above 50! A few examples are also included in the repos, such as this one
+
 ![DQN playing Breakout](https://github.com/zxzhaixiang/MachineLearning_demo/blob/master/assets/BreakoutNoFrameskip-v4-4000-489frame_351.0.gif "DQN playing Breakout")
 
 ## A trick to prevent Google Colab Timeout
